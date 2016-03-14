@@ -1,0 +1,30 @@
+using System;
+class MainClass {
+  public static void Main (string[] args) {
+    //I don't actually know what any of the above lines mean yet. I just know they're there to make things work.
+
+ int a = 1; // This is me telling the program that a exists, that it's an integer, and that it equals 1
+   while (a <= 100) // As long as a is less than or equal to 100 it should follow the commands below between the {}s
+    { //This is where the commands from the while line start. It's only going to do one of the below before checking to see if a is still less than 100. If it is it'll start over from the while statment.
+if (a%3==0 & a%5==0) // The % sign means the remainder from dividing the first part by the second part. In thise case it's the remainder of a divided by 3. If a =3,6,9,12, etc the remainder is  0. The == sign means "is the same as" which is slightly different from equals because equals is a command (I made a equal to 1 earlier) where as this is more of a check to see if the first bit is the same as the second. In this case if the remainder of a divided by 3 is the same as zero AND the remainder of a divided by 5 is the same as zero then it'll do the next block of code between the {}s. If not it'll check the next "if".
+{ //this is where the commands from the if statement above start
+    Console.WriteLine ("fizzbuzz"); //this tells the compiler (the screen to the right) to write "fizzbuzz". This only happens when a is divisible by both 3 and 5 thanks to my clever if statement above.
+    a++; //This adds one to a. 
+} //this is where the commands from the if statement above and and now it'll start again from the the while statement checking to see if a is less than or equal to 100.
+if (a%3==0) // this if statement is the same as above except it only applies if a is divisible by 3. Note that if it's divisible by both 3 and 5 it never gets this far because that triggers the first if statement.
+{
+    Console.WriteLine ("fizz"); // This tells the compiler (screen to the right) to write "fizz"
+    a++; // this adds one to 1
+}
+if (a%5==0) // This is exactly the same as above except it's for when a is divisible by 5. Again if it were also divible by 3 it would have been caught by the first if statement.
+{
+    Console.WriteLine ("buzz"); // This tells the compiler (screen to the right) to write "buzz"
+    a++; // this adds one to 1
+}
+if (a<100) // This if statement is meant to catch all a when it's less than 100. Note that and values of a that are divisble by both 3 and 5 were triggered the first if statement, those by divisible by 3 but not 5 triggered the second and those divisible by 5 but not 3 triggered the third. 
+Console.WriteLine ( a++); // This tells the compiler to write the value of a and to add one to it.
+    } //This is where the commands from the "while a is less than 100" line end 
+   
+  }
+}
+      

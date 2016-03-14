@@ -1,0 +1,28 @@
+using System;
+class MainClass {
+  public static void Main (string[] args) {
+  
+ int a = 1;
+   while (a <= 100)
+    { 
+if (a%3==0 & a%5==0) 
+{ 
+    Console.WriteLine ("fizzbuzz");
+    a++;
+}
+if (a%3==0)
+{
+    Console.WriteLine ("fizz");
+    a++;
+}
+if (a%5==0)
+{
+    Console.WriteLine ("buzz");
+    a++;
+}
+if (a<100) 
+Console.WriteLine ( a++);
+    }
+   
+  }
+}

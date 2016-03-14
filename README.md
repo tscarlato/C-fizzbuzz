@@ -1,2 +1,2 @@
-# C-fizzbuzz
-my attempt a fizzbuzz in c#
+I took a coding class yesterday and today I decided to try to write a fizzbuzz program which should print all the numbers between 1 and 100 except those divisible by 3 should say "fizz", those divisible by 5 should say "buzz" and those divisible by both 3 & 5 should say "fizzbuzz" instead of the number.
+Anyway, my code works and i've linked to a site where you can see it. Push the "Run" button to watch the magic. The text in green after the // is my explanation of what each line does. You'll notice it because it looks like English and is far wordier than is probably necessary. The code is the not green stuff that does not look like English. It's technically c# (which is the language the class taught).
